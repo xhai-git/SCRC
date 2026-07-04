@@ -44,6 +44,7 @@ Android 调度类模块
 - 和平精英
 - 王者荣耀（官服/体验服/国际服）
 - QQ飞车
+- 火影忍者
 
 ## 额外说明
 - 若需添加新的oplus云控配置，请将文件复制到/data/adb/modules/SCRC/encrypted_oplus-config/目录
