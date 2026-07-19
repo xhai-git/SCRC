@@ -1,7 +1,6 @@
 {
-    "version": "5.0.2",
+    "version": "v5.0.2",
     "versionCode": 64,
-    "zipUrl": "https://github.com/xhai-git/SCRC/releases/download/v5.0.2/SCRC_v5.0.2.zip
-",
+    "zipUrl": "https://github.com/xhai-git/SCRC/releases/download/v5.0.2/SCRC_v5.0.2.zip",
     "changelog": "https://raw.githubusercontent.com/xhai-git/SCRC/main/changelog.md"
 }
