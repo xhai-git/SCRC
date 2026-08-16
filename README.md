@@ -1,106 +1,99 @@
 # SCRC
 
-Android 调度类模块
+Oplus 云控注入模块
 
 ## 注意事项
 
-- 本模块暂时仅支持骁龙 8 Gen 3
-- 本模块共包含两个部分：
-  - Oplus 云控注入
-  - 二改 Scene 调度
-- Oplus 云控注入为游戏相关配置
-
-## 关于二改 Scene 调度
-
-- 若需使用二改 Scene 调度，则必须安装 Scene 9（Root 模式）
-- 二改 Scene 调度包含两个版本：
-  - Oplus 专用版
-  - 通用版
-- 不支持盗版（破解版）Scene
-- Oplus 专用版仅支持 OPPO 及其子品牌设备
-- Oplus 专用版仅包含日常使用配置，不包含 Scene 游戏调度配置
-- Oplus 专用版可与一加风驰游戏内核兼容
-- 通用版理论上支持所有设备
-- 请在 Scene 中开启 **性能调节** 按钮以生效
-
-## 关于 Oplus 云控注入
-
 - Oplus 云控注入仅支持 OPPO 及其子品牌设备
 - 仅支持 ColorOS（含 realme UI）
-- 设备需支持 SCX 调速器
-- 不建议使用第三方内核
+- 建议使用ColorOS 16（Realme UI 7）较新版系统
+- 不建议使用 ColorOS 15 (Realme UI 6)
+- **不支持** ColorOS 14 (Realme UI 5) 及以下系统
+- 设备需支持 SCX / Hmbird CPU 调速器
+- 不建议使用第三方内核 (GKI)
 - 不建议刷入其他第三方调度/限频类模块
-- 不建议使用任何游戏相关第三方线程模块
-- 请勿在 Scene 中自行切换 CPU 调速器
-- 请确保各个系统组件运行正常
+- **请勿**使用任何游戏相关第三方线程模块
+- **请勿**在 Scene 中自行切换 CPU 调速器
 
+## Oplus 云控注入适配列表
+
+- 暗区突围
+- 崩坏：星穹铁道
+- 穿越火线：枪战王者
+- 对峙2（官服/华为服）
+- 第五人格
+- 第五人格（官服/vivo服）
+- 光遇
+- 和平精英
+- 火影忍者
+- 金铲铲之战
+- 绝区零
+- 洛克王国
+- 鸣潮（官服/B服/国际服）
+- 逆战未来
+- PUBG Mobile（全球服/日韩服/台服/越南服/印度服/测试服）
+- QQ飞车
+- 王者荣耀（官服/体验服/国际服）
+- 无畏契约手游
+- 使命召唤手游（官服/繁中服）
+- 失控进化
+- 三角洲行动
+- 英雄联盟手游
+- 萤火突击（官服/渠道服）
+- 永劫无间
+- 异环
+- 阴阳师
+- 原神（官服/B服）
+- 战双帕弥什
+
+## 关于添加云控配置
+
+- 若需添加新的 Oplus 云控配置，请将文件添加至
+  ```
+  /data/adb/modules/scrc/encrypted_oplus-config/
+  ```
+- 支持 `.enc` 后缀（默认配置）以及 `.json` 后缀（可自行修改内容）
+- 若添加 `.json` 配置，请确保文件名为游戏包名，且 JSON 格式正确
+ 
 ## 关于掉风驰 / 风驰异常
 
 - 请确保各个系统组件运行正常（如 oiface、gameopt、游戏助手、应用增强服务等）
 - 若游戏助手/应用增强服务启用后仍无法正常运行，请尝试清除其数据后重试
-- 请不要随意冻结系统组件，除非能够确保不会影响风驰
+- 请勿随意冻结系统组件，除非能够确保不会影响风驰
 - 若系统环境被严重破坏，请刷机解决
 - 请勿开启 Scene 核心分配（游戏中）
-- 使用 KernelSU 的用户，请更新至最新版
-
-## Oplus 云控注入适配列表
-
-- 异环
-- 战双帕弥什
-- 鸣潮（官服/B服/国际服）
-- 崩坏：星穹铁道
-- 原神（官服/B服）
-- 绝区零
-- 阴阳师
-- PUBG Mobile（全球服/日韩服/台服/越南服/印度服/测试服）
-- 金铲铲之战
-- 英雄联盟手游
-- 穿越火线：枪战王者
-- 无畏契约手游
-- 三角洲行动
-- 和平精英
-- 王者荣耀（官服/体验服/国际服）
-- QQ 飞车
-- 火影忍者
-- 第五人格
-- 光遇
-- 失控进化
-- 逆战未来
-
-## 关于添加云控配置
-
-- 若需添加新的 Oplus 云控配置，请将文件复制到：
-  - `/data/adb/modules/SCRC/encrypted_oplus-config/`
-  - 支持 `.enc` 后缀（默认配置）以及 `.json` 后缀（可自行修改内容）
-  - 若添加 `.json` 配置，请确保文件名为游戏包名，且 JSON 格式正确
+- KernelSU 用户请更新至最新版 KernelSU
 
 ## 关于二改
-
-- 若安装 Oplus 云控注入，可在 `/data/adb/modules/SCRC/setting.conf` 中选择是否切换 CPU 调速器。
-
-```properties
-change_governor=true       # 是否启用修改调速器，填写 true 或 false
-target_governor=walt       # 启用后切换的目标调速器，仅允许填写设备支持的调速器
-whitelist_governor=walt,scx # 检测到这些调速器时不进行切换，可填写多个，使用 , 分隔
+- inject 注入程序可用于其他项目，使用时需确保模块中存在以下结构
 ```
-
-- 在同时选择**安装二改 Scene 调度**和**云控配置**后，将自动启用切换调速器，否则保持禁用。
-- 若不需要自动启用，可在 `/script/scrc_setup.sh` 中移除以下代码：
-
-```bash
-if [ "$install" = "1" ]; then
-  sed -i 's/^change_governor=.*/change_governor=true/' "$MODDIR/setting.conf"
-  echo "已自动开启切换walt调速器（以适配二改Scene调度）"
-fi
+$MODDIR/
+├── bin/
+│   └── inject
+└── encrypted_oplus-config/
+    ├── xxx.json
+    └── xxx.enc
 ```
+- 若需添加云控配置/适配其他SOC平台，请在如下位置进行添加
+```
+$MODDIR/
+└── config/
+    ├── $SOC.MODEL 1
+    │   ├── xxx.json
+    │   └── xxx.enc
+    └── $SOC.MODEL 2
+        ├── xxx.json
+        └── xxx.enc
+```
+- 发布二改版本请征求原作者意见，并注明原作者
 
-- 若需更改 Scene 调度配置：
-  - 已安装模块：修改 `/data/adb/modules/SCRC/config/` 下的 Scene 配置文件
-  - 未安装模块：修改压缩包中的
-    - `scene_config/config_generic`（通用版配置）
-    - `scene_config/config_oplus-specific`（Oplus 专用版配置）
-- 若需添加云控配置，请将文件放入：
-  - `/data/adb/modules/SCRC/encrypted_oplus-config/`
-  - 二改版本请注明配置来源
-- 若需发布二改版本，请先征求原作者意见，并注明原作者
-- 请勿修改模块 ID 或文件（夹）名称，以免导致程序无法正常工作
+## 关于 SCRC_Addon 附加模块（二改 SCENE 调度）
+
+- 开启 SCENE 调度后可能造成风驰 **调频异常/失效** ，非必要 **不建议安装**
+- 附加模块刷入并重启后会与 SCRC 主模块合并
+- 主模块更新后需重新刷入附加模块
+- 若需恢复 SCENE 配置，请卸载 SCRC
+- 需安装 SCENE 9（Root 模式）
+- 不支持盗版（破解版）SCENE
+- 不包含 SCENE 游戏调度配置
+- 请在 SCENE 中开启 **性能调节** 按钮以生效
