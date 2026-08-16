@@ -48,7 +48,7 @@ Oplus 云控注入模块
 
 ## 关于添加云控配置
 
-- 若需添加新的 Oplus 云控配置，请将文件添加至
+- 若需添加 Oplus 云控配置，请将文件添加至
   ```
   /data/adb/modules/scrc/encrypted_oplus-config/
   ```
@@ -71,29 +71,29 @@ $MODDIR/
 ├── bin/
 │   └── inject
 └── encrypted_oplus-config/
-    ├── xxx.json
-    └── xxx.enc
+    ├── package_name.enc
+    └── package_name.json
 ```
 - 若需添加云控配置/适配其他SOC平台，请在如下位置进行添加
 ```
 $MODDIR/
 └── config/
-    ├── $SOC.MODEL 1
-    │   ├── xxx.json
-    │   └── xxx.enc
-    └── $SOC.MODEL 2
-        ├── xxx.json
-        └── xxx.enc
+    ├── $SOC.MODEL_1/
+    │   ├── package_name.enc
+    │   └── package_name.json
+    └── $SOC.MODEL_2/
+        ├── package_name.enc
+        └── package_name.json
 ```
 - 发布二改版本请征求原作者意见，并注明原作者
 
 ## 关于 SCRC_Addon 附加模块（二改 SCENE 调度）
 
-- 开启 SCENE 调度后可能造成风驰 **调频异常/失效** ，非必要 **不建议安装**
+- 开启 SCENE 调度后可能造成风驰**调频异常/失效**，非必要**不建议安装**
 - 附加模块刷入并重启后会与 SCRC 主模块合并
 - 主模块更新后需重新刷入附加模块
 - 若需恢复 SCENE 配置，请卸载 SCRC
 - 需安装 SCENE 9（Root 模式）
 - 不支持盗版（破解版）SCENE
 - 不包含 SCENE 游戏调度配置
-- 请在 SCENE 中开启 **性能调节** 按钮以生效
+- 请在 SCENE 中开启**性能调节**按钮以生效
