@@ -57,7 +57,7 @@ Oplus 云控注入模块
 - 巅峰急速
 - 王者荣耀
 
-### supported package name
+### 包名列表
 #### SM8650
 - com.axlebolt.standoff2.huawei
 - com.axlebolt.standoff2
