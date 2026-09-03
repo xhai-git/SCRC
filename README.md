@@ -59,57 +59,63 @@ Oplus 云控注入模块
 
 ### 包名列表
 #### SM8650
-- com.axlebolt.standoff2.huawei
-- com.axlebolt.standoff2
-- com.garena.game.codm
-- com.hottagames.yh.laohu
-- com.kurogame.haru.hero
-- com.kurogame.mingchao.bilibili
-- com.kurogame.mingchao
-- com.kurogame.wutheringwaves.global
-- com.levelinfinite.sgameGlobal
-- com.levelinfinite.sgameGlobal.midaspay
-- com.miHoYo.hkrpg
-- com.miHoYo.Nap
-- com.miHoYo.ys.bilibili
-- com.miHoYo.Yuanshen
-- com.netease.dwrg
-- com.netease.dwrg.nearme.gamecenter
-- com.netease.dwrg5.vivo
-- com.netease.l22
-- com.netease.onmyoji
-- com.netease.sky
-- com.netease.yhtj
-- com.netease.yhtj.nearme.gamecenter
-- com.pubg.imobile
-- com.pubg.krmobile
-- com.rekoo.pubgm
-- com.sofunny.Sausage
-- com.tencent.ig
-- com.tencent.igce
-- com.tencent.jkchess
-- com.tencent.KiHan
-- com.tencent.lolm
-- com.tencent.mf.uam
-- com.tencent.nrc
-- com.tencent.rmcn
-- com.tencent.tmgp.cf
-- com.tencent.tmgp.cod
-- com.tencent.tmgp.codev
-- com.tencent.tmgp.dfm
-- com.tencent.tmgp.nz
-- com.tencent.tmgp.pubgmhd
-- com.tencent.tmgp.sgame
-- com.tencent.tmgp.sgamece
-- com.tencent.tmgp.speedmobile
-- com.vng.pubgmobile
+```
+com.axlebolt.standoff2.huawei
+com.axlebolt.standoff2
+com.garena.game.codm
+com.hottagames.yh.laohu
+com.kurogame.haru.hero
+com.kurogame.mingchao.bilibili
+com.kurogame.mingchao
+com.kurogame.wutheringwaves.global
+com.levelinfinite.sgameGlobal
+com.levelinfinite.sgameGlobal.midaspay
+com.miHoYo.hkrpg
+com.miHoYo.Nap
+com.miHoYo.ys.bilibili
+com.miHoYo.Yuanshen
+com.netease.dwrg
+com.netease.dwrg.nearme.gamecenter
+com.netease.dwrg5.vivo
+com.netease.l22
+com.netease.onmyoji
+com.netease.sky
+com.netease.yhtj
+com.netease.yhtj.nearme.gamecenter
+com.pubg.imobile
+com.pubg.krmobile
+com.rekoo.pubgm
+com.sofunny.Sausage
+com.tencent.ig
+com.tencent.igce
+com.tencent.jkchess
+com.tencent.KiHan
+com.tencent.lolm
+com.tencent.mf.uam
+com.tencent.nrc
+com.tencent.rmcn
+com.tencent.tmgp.cf
+com.tencent.tmgp.cod
+com.tencent.tmgp.codev
+com.tencent.tmgp.dfm
+com.tencent.tmgp.nz
+com.tencent.tmgp.pubgmhd
+com.tencent.tmgp.sgame
+com.tencent.tmgp.sgamece
+com.tencent.tmgp.speedmobile
+com.vng.pubgmobile
+```
 
 #### SM8750
-- com.miHoYo.Yuanshen
+```
+com.miHoYo.Yuanshen
+```
 
 #### SM8845
-- com.netease.race
-- com.tencent.tmgp.sgame
+```
+com.netease.race
+com.tencent.tmgp.sgame
+```
 
 ## 关于添加云控配置
 
