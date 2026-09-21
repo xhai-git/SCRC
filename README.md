@@ -1,3 +1,5 @@
+
+
 # SCRC
 
 Oplus 云控注入模块
@@ -124,6 +126,7 @@ com.tencent.tmgp.sgame
   /data/adb/modules/scrc/encrypted_oplus-config/
   ```
 - 支持 `.enc` 后缀（默认配置）以及 `.json` 后缀（明文 json）
+- 注意：自 v5.0.3 起不再支持旧版 `.enc` 文件
 - 若添加 `.json` 配置，请确保文件名为游戏包名，且 JSON 格式正确
  
 ## 关于掉风驰 / 风驰异常
