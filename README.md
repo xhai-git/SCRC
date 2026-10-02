@@ -30,6 +30,7 @@ SCRC 旨在不破坏 ColorOS 官方调度的前提下，通过注入云控配置
 - 对峙2（官服/华为服）
 - 第五人格
 - 第五人格（官服/vivo服）
+- 高能英雄
 - 光遇
 - 和平精英
 - 火影忍者
@@ -51,7 +52,7 @@ SCRC 旨在不破坏 ColorOS 官方调度的前提下，通过注入云控配置
 - 永劫无间
 - 异环
 - 阴阳师
-- 原神（官服/B服）
+- 原神（官服/B服/国际服）
 - 战双帕弥什
 
 ### SM8750
@@ -74,6 +75,7 @@ com.kurogame.mingchao
 com.kurogame.wutheringwaves.global
 com.levelinfinite.sgameGlobal
 com.levelinfinite.sgameGlobal.midaspay
+com.miHoYo.GenshinImpact
 com.miHoYo.hkrpg
 com.miHoYo.Nap
 com.miHoYo.ys.bilibili
@@ -102,6 +104,7 @@ com.tencent.tmgp.cf
 com.tencent.tmgp.cod
 com.tencent.tmgp.codev
 com.tencent.tmgp.dfm
+com.tencent.tmgp.gnyx
 com.tencent.tmgp.nz
 com.tencent.tmgp.pubgmhd
 com.tencent.tmgp.sgame
