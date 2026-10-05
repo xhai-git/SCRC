@@ -28,8 +28,7 @@ SCRC 旨在不破坏 ColorOS 官方调度的前提下，通过注入云控配置
 - 崩坏：星穹铁道
 - 穿越火线：枪战王者
 - 对峙2（官服/华为服）
-- 第五人格
-- 第五人格（官服/vivo服）
+- 第五人格（官服/vivo服/4399服）
 - 高能英雄
 - 光遇
 - 和平精英
@@ -38,6 +37,7 @@ SCRC 旨在不破坏 ColorOS 官方调度的前提下，通过注入云控配置
 - 绝区零
 - 洛克王国
 - 鸣潮（官服/B服/国际服）
+- 迷你世界 (官服/4399服)
 - 逆战未来
 - PUBG Mobile（全球服/日韩服/台服/越南服/印度服/测试服）
 - QQ飞车
@@ -80,6 +80,8 @@ com.miHoYo.hkrpg
 com.miHoYo.Nap
 com.miHoYo.ys.bilibili
 com.miHoYo.Yuanshen
+com.minitech.miniworld
+com.minitech.miniworld.m4399
 com.netease.dwrg
 com.netease.dwrg.nearme.gamecenter
 com.netease.dwrg5.vivo
